@@ -1,7 +1,8 @@
 <template>
-  <main>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  </main>
+  <TheHeader />
+  <main></main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TheHeader from "@/components/TheHeader.vue";
+</script>
