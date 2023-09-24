@@ -11,7 +11,7 @@
         </button>
 
         <!-- Title -->
-        <h1 class="text-3xl md:text-4xl font-bold text-white">Electronic</h1>
+        <h1 class="text-3xl md:text-4xl font-bold text-white">Good Vibes</h1>
       </div>
 
       <!-- Search-->
