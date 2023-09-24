@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Classical Lines",
+    "artists": ["Careless Angel"],
+    "duration": "1:04",
+    "album": {
+      "name": "Hyperspace",
+      "image": "https://picsum.photos/id/10/300/300"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Sweet Saturday",
+    "artists": ["Heartsick Images"],
+    "duration": "3:52",
+    "album": {
+      "name": "Feel The Reflections",
+      "image": "https://picsum.photos/id/11/300/300"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Fortunate Memory",
+    "artists": ["Happy Flow", "Friday Crash"],
+    "duration": "3:03",
+    "album": {
+      "name": "A Distilled Flow",
+      "image": "https://picsum.photos/id/12/300/300"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Believe In A Thing Called Lethargy",
+    "artists": ["Big Juice"],
+    "duration": "4:19",
+    "album": {
+      "name": "Crying World",
+      "image": "https://picsum.photos/id/13/300/300"
+    }
+  },
+  {
+    "id": 5,
+    "title": "I Lose My Ways",
+    "artists": ["Money Voice"],
+    "duration": "3:54",
+    "album": {
+      "name": "Your Soul",
+      "image": "https://picsum.photos/id/14/300/300"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Not Enough Beauty",
+    "artists": ["Young Jazz", "Pained Solo"],
+    "duration": "3:37",
+    "album": {
+      "name": "Is This Spring",
+      "image": "https://picsum.photos/id/15/300/300"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Garden Of Voice",
+    "artists": ["Soft Concerto"],
+    "duration": "5:03",
+    "album": {
+      "name": "So Long End",
+      "image": "https://picsum.photos/id/16/300/300"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Fresh Balance",
+    "artists": ["Another Vision"],
+    "duration": "3:39",
+    "album": {
+      "name": "Sunny Nature",
+      "image": "https://picsum.photos/id/17/300/300"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Stuck With Shadows",
+    "artists": ["Good Dreams"],
+    "duration": "4:53",
+    "album": {
+      "name": "Uplifting Day",
+      "image": "https://picsum.photos/id/18/300/300"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Unexpected Promises",
+    "artists": ["Rest Adventure"],
+    "duration": "5:42",
+    "album": {
+      "name": "Space For Echo",
+      "image": "https://picsum.photos/id/19/300/300"
+    }
+  }
+]
