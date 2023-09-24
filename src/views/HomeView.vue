@@ -1,5 +1,5 @@
 <template>
-  <TheHeader />
+  <TheHeader title="Good Vibes" />
   <main>
     <PlaylistTable />
   </main>

@@ -11,7 +11,7 @@
         </button>
 
         <!-- Title -->
-        <h1 class="text-3xl md:text-4xl font-bold text-white">Good Vibes</h1>
+        <h1 class="text-3xl md:text-4xl font-bold text-white">{{ title }}</h1>
       </div>
 
       <!-- Search-->
@@ -32,6 +32,10 @@
 <script setup lang="ts">
 import { PlayIcon } from "@heroicons/vue/24/solid";
 import { MagnifyingGlassIcon } from "@heroicons/vue/24/outline";
+
+defineProps<{
+  title: string;
+}>();
 </script>
 
 <style scoped></style>
