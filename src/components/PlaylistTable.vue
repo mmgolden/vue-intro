@@ -3,6 +3,7 @@
     <table class="w-full min-w-max text-neutral-300 text-sm border-collapse">
       <thead>
         <tr>
+          <!-- Header -->
           <th
             v-for="header in headers"
             :key="header"
@@ -14,7 +15,10 @@
       </thead>
       <tbody>
         <tr v-for="(song, index) in songs" :key="song.id">
+          <!-- Number -->
           <td :class="['py-2 px-4', { 'pt-6': index === 0 }]">{{ index + 1 }}</td>
+
+          <!-- Title -->
           <td :class="['flex gap-4 py-2 px-4', { 'pt-6': index === 0 }]">
             <img :src="song.album.image" :alt="song.album.name" class="w-10 h-10" />
             <div>
@@ -22,8 +26,14 @@
               <p>{{ getArtists(song.artists) }}</p>
             </div>
           </td>
+
+          <!-- Album -->
           <td :class="['py-2 px-4', { 'pt-6': index === 0 }]">{{ song.album.name }}</td>
+
+          <!-- Duration -->
           <td :class="['py-2 px-4', { 'pt-6': index === 0 }]">{{ song.duration }}</td>
+
+          <!-- Favorite -->
           <td :class="['py-2 px-4 text-center', { 'pt-6': index === 0 }]">
             <button aria-label="Favorite" class="focus:outline-none">
               <HeartIcon class="h-6 w-6 text-neutral-300 hover:text-white" />
