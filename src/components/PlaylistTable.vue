@@ -35,8 +35,21 @@
 
           <!-- Favorite -->
           <td :class="['py-2 px-4 text-center', { 'pt-6': index === 0 }]">
-            <button aria-label="Favorite" class="focus:outline-none">
-              <HeartIcon class="h-6 w-6 text-neutral-300 hover:text-white" />
+            <button
+              v-if="!song.isFavorite"
+              aria-label="Favorite"
+              class="focus:outline-none"
+              @click="addToFavorites(index)"
+            >
+              <HeartIconOutline class="h-6 w-6 text-neutral-300 hover:text-white" />
+            </button>
+            <button
+              v-else
+              aria-label="Unfavorite"
+              class="focus:outline-none"
+              @click="removeFromFavorites(index)"
+            >
+              <HeartIconSolid class="h-6 w-6 text-green-600 hover:text-green-700" />
             </button>
           </td>
         </tr>
@@ -47,13 +60,23 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { HeartIcon } from "@heroicons/vue/24/outline";
+import { HeartIcon as HeartIconOutline } from "@heroicons/vue/24/outline";
+import { HeartIcon as HeartIconSolid } from "@heroicons/vue/24/solid";
 import playlist from "@/api/playlist.json";
+import type { Song } from "@/types";
 
 const headers = ref(["#", "Title", "Album", "Duration", ""]);
-const songs = ref(playlist);
+const songs = ref<Song[]>(playlist);
 
 const getArtists = (artists: Array<string>) => artists.join(", ");
+
+const addToFavorites = (index: number) => {
+  songs.value[index].isFavorite = true;
+};
+
+const removeFromFavorites = (index: number) => {
+  songs.value[index].isFavorite = false;
+};
 </script>
 
 <style scoped></style>
