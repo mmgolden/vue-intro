@@ -53,6 +53,7 @@ We will create a song playlist with Vue. Users can favorite songs and search by 
 ## Getting started
 
 The first step is to [install Vue](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+
 `npm create vue@latest`
 
 Answer yes to everything except JSX, Pinia, Vitest, and end-to-end testing.
@@ -70,9 +71,10 @@ Answer yes to everything except JSX, Pinia, Vitest, and end-to-end testing.
 ```
 
 Then, install the dependencies.
+
 `npm install`
 
-Update the `.eslintrc.cjs` file to use `plugin:vue/vue3-strongly-recommended`. See [￼`eslint-plugin-vue`￼](https://eslint.vuejs.org/user-guide/#bundle-configurations) and the official [Vue style guide](https://vuejs.org/style-guide/rules-strongly-recommended.html).
+Update the `.eslintrc.cjs` file to use `plugin:vue/vue3-strongly-recommended`. See [`eslint-plugin-vue`](https://eslint.vuejs.org/user-guide/#bundle-configurations) and the official [Vue style guide](https://vuejs.org/style-guide/rules-strongly-recommended.html).
 
 ```
 // .eslintrc.cjs
@@ -99,9 +101,11 @@ Update the `.prettierrc.json` file.
 ```
 
 Re-format all of the files.
+
 `npm run format`
 
 Start the dev server.
+
 `npm run dev`
 
 ### Directory structure
@@ -166,7 +170,9 @@ Remove `TheWelcome` component from `views/HomeView.vue`.
 ### Install Tailwind CSS
 
 Install [Tailwind CSS](https://tailwindcss.com/docs/guides/vite#vue).
+
 `npm install --save-dev tailwindcss postcss autoprefixer`
+
 `npx tailwindcss init -p`
 
 Add the paths to your template files.
@@ -209,6 +215,7 @@ Add some code to test if Tailwind is working.
 ```
 
 Start the dev server.
+
 `npm run dev`
 
 ### Add Google font
@@ -230,6 +237,7 @@ Start the dev server.
 ### Create the header
 
 Install Heroicons
+
 `npm install @heroicons/vue`
 
 Add a global background color to `style.css`
@@ -538,7 +546,7 @@ You can use the `v-for` directive to [render a list](https://vuejs.org/guide/ess
 
 ### Props
 
-Props are custom attributes you can use to pass data from a parent component to a child component. When the parent property updates, it will flow down to the child, but not the other way around. You should not attempt to mutate a prop inside a child component.
+[Props](https://vuejs.org/guide/components/props.html#props-declaration) are custom attributes you can use to pass data from a parent component to a child component. When the parent property updates, it will flow down to the child, but not the other way around. You should not attempt to mutate a prop inside a child component.
 
 ### Add the ability to favorite a song
 
@@ -682,15 +690,15 @@ const removeFromFavorites = (id: number) => {
 
 ### Conditional rendering
 
-The directive `v-if` is used to conditionally render a block. The block will only be rendered if the directive’s expression returns a truthy value. You can use the `v-else` directive to indicate an “else block.”
+The directive `v-if` is used to [conditionally render](https://vuejs.org/guide/essentials/conditional.html#v-if) a block. The block will only be rendered if the directive’s expression returns a truthy value. You can use the `v-else` directive to indicate an “else block.”
 
 ### Listening for events
 
-We can use the `v-on` directive (shorthand `@` symbol) to listen for DOM events and run some code when triggered.
+We can use the `v-on` directive (shorthand `@` symbol) to [listen for DOM events](https://vuejs.org/guide/essentials/event-handling.html#listening-to-events) and run some code when triggered.
 
 ### Emitting events
 
-A component can emit custom events. You can pass arguments along with the emitted event. The parent component can listen for the event using `v-on` or the `@` symbol shorthand.
+A component can [emit custom events](https://vuejs.org/guide/components/events.html#emitting-and-listening-to-events). You can pass arguments along with the emitted event. The parent component can listen for the event using `v-on` or the `@` symbol shorthand.
 
 ### Add searching by song title
 
@@ -745,7 +753,7 @@ const filteredSongs = computed(() =>
 
 ### Form input bindings
 
-We can use `v-model` to sync the state of form input elements with the state in JavaScript. The `v-model` is a simplified version of this:
+We can use [`v-model`](https://vuejs.org/guide/essentials/forms.html) to sync the state of form input elements with the state in JavaScript. The `v-model` is a simplified version of this:
 
 ```
 <input
@@ -755,4 +763,4 @@ We can use `v-model` to sync the state of form input elements with the state in 
 
 ### Computed properties
 
-You can use computed properties for complex logic that includes reactive data. A computed property automatically tracks its reactive dependencies. Vue will update any bindings that depend on the computed property when the reactive data changes.
+You can use [computed properties](https://vuejs.org/guide/essentials/computed.html) for complex logic that includes reactive data. A computed property automatically tracks its reactive dependencies. Vue will update any bindings that depend on the computed property when the reactive data changes.
